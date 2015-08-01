@@ -49,7 +49,7 @@ function! Vim_Markdown_Preview()
   endif
 
   if b:vim_markdown_preview_temp_file == 1
-    sleep 200m
+    sleep 1000m
     call system('rm /tmp/vim-markdown-preview.html')
   endif
 endfunction
@@ -97,7 +97,7 @@ function! Vim_Markdown_Preview_Local()
   endif
 
   if b:vim_markdown_preview_temp_file == 1
-    sleep 200m
+    sleep 1000m
     call system('rm ' . curr_file . '.html')
   endif
 endfunction
